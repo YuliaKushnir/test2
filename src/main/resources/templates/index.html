@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Circle</title>
+</head>
+<body>
+    <h2>Input number for calculate</h2>
+
+    <form method="post">
+        Radius <input name="radius" type="number"><br>
+
+        <button type="submit" formaction="/long">Long</button>
+        <button type="submit" formaction="/square">Square</button>
+    </form>
+
+    <p><span th:text="${result}"></span></p>
+
+</body>
+</html>
