@@ -7,6 +7,9 @@ WORKDIR /app
 # Копіювання файлів проекту у робочу директорію
 COPY . .
 
+# Надання виконувальних прав файлу mvnw
+RUN chmod +x ./mvnw
+
 # Збирання та запуск проекту
 RUN ./mvnw clean package
 CMD ["java", "-jar", "target/test2.jar"]
