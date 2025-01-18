@@ -24,14 +24,14 @@ public class CircleController {
     public String getLong(Circle circle, Model model){
         String res = String.valueOf(circleService.getLong(circle.getRadius()));
         model.addAttribute("result", res);
-        return "index";
+        return "result";
     }
 
     @PostMapping("/square")
     public String getSquare(Circle circle, Model model){
         String res = String.valueOf(circleService.getSquare(circle.getRadius()));
         model.addAttribute("result", res);
-        return "index";
+        return "result";
     }
 
 
